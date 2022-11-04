@@ -1,0 +1,21 @@
+{
+  "name": "healthcheck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@nestjs/axios": "^1.0.0",
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/terminus": "^9.1.2"
+  }
+}
