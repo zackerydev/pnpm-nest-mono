@@ -9,7 +9,7 @@ importers:
     specifiers:
       '@nestjs/cli': ^9.0.0
       '@nestjs/common': ^9.0.0
-      '@nestjs/core': ^9.0.0
+      '@nestjs/core': ^9.1.6
       '@nestjs/platform-express': ^9.0.0
       '@nestjs/schematics': ^9.0.0
       '@nestjs/testing': ^9.0.0
@@ -60,8 +60,8 @@ importers:
       prettier: 2.7.1
       source-map-support: 0.5.21
       supertest: 6.3.1
-      ts-jest: 28.0.8_2zfq7voi7wq34ia6tokjrpo2qe
-      ts-loader: 9.4.1_qqxisngxjbp7lstdk7boexbu3e
+      ts-jest: 28.0.8_fztrhi54teek7om3xmnfwid3mq
+      ts-loader: 9.4.1_typescript@4.8.4
       ts-node: 10.9.1_e7yvbkxpwwqnzxz2s2bfjt7zx4
       tsconfig-paths: 4.1.0
       typescript: 4.8.4
@@ -70,13 +70,21 @@ importers:
     specifiers:
       '@nestjs/axios': ^1.0.0
       '@nestjs/common': ^9.0.0
+      '@nestjs/core': ^9.1.6
+      '@nestjs/platform-express': ^9.1.6
       '@nestjs/terminus': ^9.1.2
+      reflect-metadata: ^0.1.13
+      rxjs: ^7.2.0
       typescript: ^4.7.4
     dependencies:
       '@nestjs/axios': 1.0.0_yjxybkvltbh2d3oivnq5etx3oi
       '@nestjs/common': 9.1.6_yzt46al3aifnexifjjdb4dxxja
+      '@nestjs/platform-express': 9.1.6_6whalgrsvisgjemghedgkfq7dm
       '@nestjs/terminus': 9.1.2_abdwileke2hqrs3f5gykhzlvd4
     devDependencies:
+      '@nestjs/core': 9.1.6_bx3wiubfryfbvpzqwr6ml4ajpu
+      reflect-metadata: 0.1.13
+      rxjs: 7.5.7
       typescript: 4.8.4
 
 packages:
@@ -99,7 +107,7 @@ packages:
         optional: true
     dependencies:
       ajv: 8.11.0
-      ajv-formats: 2.1.1_ajv@8.11.0
+      ajv-formats: 2.1.1
       jsonc-parser: 3.1.0
       rxjs: 6.6.7
       source-map: 0.7.4
@@ -115,7 +123,7 @@ packages:
         optional: true
     dependencies:
       ajv: 8.11.0
-      ajv-formats: 2.1.1_ajv@8.11.0
+      ajv-formats: 2.1.1
       chokidar: 3.5.3
       jsonc-parser: 3.1.0
       rxjs: 6.6.7
@@ -132,7 +140,7 @@ packages:
         optional: true
     dependencies:
       ajv: 8.11.0
-      ajv-formats: 2.1.1_ajv@8.11.0
+      ajv-formats: 2.1.1
       chokidar: 3.5.3
       jsonc-parser: 3.1.0
       rxjs: 6.6.7
@@ -951,38 +959,6 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@nestjs/core/9.1.6_yjxybkvltbh2d3oivnq5etx3oi:
-    resolution: {integrity: sha512-B52nYYTDSH72f1DU0G14NQSPCviXRE9fCp2/gUHuWIfVfBwcmVBAxVgyB/jAIUAhhj1f5/2odwUiw194xYtRRA==}
-    requiresBuild: true
-    peerDependencies:
-      '@nestjs/common': ^9.0.0
-      '@nestjs/microservices': ^9.0.0
-      '@nestjs/platform-express': ^9.0.0
-      '@nestjs/websockets': ^9.0.0
-      reflect-metadata: ^0.1.12
-      rxjs: ^7.1.0
-    peerDependenciesMeta:
-      '@nestjs/microservices':
-        optional: true
-      '@nestjs/platform-express':
-        optional: true
-      '@nestjs/websockets':
-        optional: true
-    dependencies:
-      '@nestjs/common': 9.1.6_yzt46al3aifnexifjjdb4dxxja
-      '@nuxtjs/opencollective': 0.3.2
-      fast-safe-stringify: 2.1.1
-      iterare: 1.2.1
-      object-hash: 3.0.0
-      path-to-regexp: 3.2.0
-      reflect-metadata: 0.1.13
-      rxjs: 7.5.7
-      tslib: 2.4.0
-      uuid: 9.0.0
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   /@nestjs/platform-express/9.1.6_6whalgrsvisgjemghedgkfq7dm:
     resolution: {integrity: sha512-zZuB1g6yIPytPIzp0EYKWT+1d02hOQ5aU6VdtO6Qg0Wn1RjdjGh3kScsqdamMEjzt0WAfL8DjE5oqrLgvashsw==}
     peerDependencies:
@@ -1038,7 +1014,7 @@ packages:
       rxjs: 7.x
     dependencies:
       '@nestjs/common': 9.1.6_yzt46al3aifnexifjjdb4dxxja
-      '@nestjs/core': 9.1.6_yjxybkvltbh2d3oivnq5etx3oi
+      '@nestjs/core': 9.1.6_bx3wiubfryfbvpzqwr6ml4ajpu
       boxen: 5.1.2
       check-disk-space: 3.3.1
       reflect-metadata: 0.1.13
@@ -1581,10 +1557,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ajv-formats/2.1.1_ajv@8.11.0:
+  /ajv-formats/2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependencies:
-      ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
         optional: true
@@ -4628,7 +4602,7 @@ packages:
     hasBin: true
     dev: true
 
-  /ts-jest/28.0.8_2zfq7voi7wq34ia6tokjrpo2qe:
+  /ts-jest/28.0.8_fztrhi54teek7om3xmnfwid3mq:
     resolution: {integrity: sha512-5FaG0lXmRPzApix8oFG8RKjAz4ehtm8yMKOTy5HX3fY6W8kmvOrmcY0hKDElW52FJov+clhUbrKAqofnj4mXTg==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -4649,7 +4623,6 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@babel/core': 7.20.2
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 28.1.3_dnlfjp7n5lpfgnj4digwzn5fhe
@@ -4662,7 +4635,7 @@ packages:
       yargs-parser: 21.1.1
     dev: true
 
-  /ts-loader/9.4.1_qqxisngxjbp7lstdk7boexbu3e:
+  /ts-loader/9.4.1_typescript@4.8.4:
     resolution: {integrity: sha512-384TYAqGs70rn9F0VBnh6BPTfhga7yFNdC5gXbQpDrBj9/KsT4iRkGqKXhziofHOlE2j6YEaiTYVGKKvPhGWvw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4674,7 +4647,6 @@ packages:
       micromatch: 4.0.5
       semver: 7.3.8
       typescript: 4.8.4
-      webpack: 5.74.0
     dev: true
 
   /ts-node/10.9.1_e7yvbkxpwwqnzxz2s2bfjt7zx4:
