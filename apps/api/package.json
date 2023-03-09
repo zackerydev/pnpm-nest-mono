@@ -24,7 +24,6 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "@types/node": "^18.15.0",
     "@zg/healthcheck": "workspace:^1.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
