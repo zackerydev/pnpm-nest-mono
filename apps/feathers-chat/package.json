@@ -41,7 +41,7 @@
     "migrate:make": "knex migrate:make"
   },
   "dependencies": {
-    "@feathersjs/adapter-commons": "^5.0.0",
+    "@feathersjs/adapter-commons": "^5.0.8",
     "@feathersjs/authentication": "^5.0.0",
     "@feathersjs/authentication-client": "^5.0.0",
     "@feathersjs/configuration": "^5.0.0",
