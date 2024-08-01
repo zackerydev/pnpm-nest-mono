@@ -1430,8 +1430,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1(express@4.18.2)(prom-client@14.2.0)
       '@prisma/client':
-        specifier: ^4.9.0
-        version: 4.11.0(prisma@4.11.0)
+        specifier: ^5.17.0
+        version: 5.17.0(prisma@4.11.0)
       '@remix-run/express':
         specifier: ^1.14.0
         version: 1.14.0(express@4.18.2)
@@ -4523,17 +4523,14 @@ packages:
   '@polymer/test-fixture@4.0.2':
     resolution: {integrity: sha512-tLX8tFE4mkc4p84YG5239G0hbgTVv2irZYrSyO0OblUqIRbRoCPmbydm3HRFQkJeAB3rPCtyeZ2roJULsmTG3A==}
 
-  '@prisma/client@4.11.0':
-    resolution: {integrity: sha512-0INHYkQIqgAjrt7NzhYpeDQi8x3Nvylc2uDngKyFDDj1tTRQ4uV1HnVmd1sQEraeVAN63SOK0dgCKQHlvjL0KA==}
-    engines: {node: '>=14.17'}
+  '@prisma/client@5.17.0':
+    resolution: {integrity: sha512-N2tnyKayT0Zf7mHjwEyE8iG7FwTmXDHFZ1GnNhQp0pJUObsuel4ZZ1XwfuAYkq5mRIiC/Kot0kt0tGCfLJ70Jw==}
+    engines: {node: '>=16.13'}
     peerDependencies:
       prisma: '*'
     peerDependenciesMeta:
       prisma:
         optional: true
-
-  '@prisma/engines-version@4.11.0-57.8fde8fef4033376662cad983758335009d522acb':
-    resolution: {integrity: sha512-3Vd8Qq06d5xD8Ch5WauWcUUrsVPdMC6Ge8ILji8RFfyhUpqon6qSyGM0apvr1O8n8qH8cKkEFqRPsYjuz5r83g==}
 
   '@prisma/engines@4.11.0':
     resolution: {integrity: sha512-0AEBi2HXGV02cf6ASsBPhfsVIbVSDC9nbQed4iiY5eHttW9ZtMxHThuKZE1pnESbr8HRdgmFSa/Kn4OSNYuibg==}
@@ -24124,13 +24121,9 @@ snapshots:
 
   '@polymer/test-fixture@4.0.2': {}
 
-  '@prisma/client@4.11.0(prisma@4.11.0)':
-    dependencies:
-      '@prisma/engines-version': 4.11.0-57.8fde8fef4033376662cad983758335009d522acb
+  '@prisma/client@5.17.0(prisma@4.11.0)':
     optionalDependencies:
       prisma: 4.11.0
-
-  '@prisma/engines-version@4.11.0-57.8fde8fef4033376662cad983758335009d522acb': {}
 
   '@prisma/engines@4.11.0': {}
 
