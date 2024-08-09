@@ -5,5 +5,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@9.5"
+  "packageManager": "pnpm@7",
+  "dependencies": {
+    "eslint": "^9.8.0"
+  }
 }
